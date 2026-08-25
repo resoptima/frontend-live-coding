@@ -71,11 +71,9 @@ For example, DummyJSON returns products containing fields such as:
 }
 ```
 
-Your frontend-facing API might expose a simpler model such as:
+Your frontend-facing API should expose a slightly different model such as:
 
 ```json
-{
-  "items": [
     {
       "id": 1,
       "name": "Example Product",
@@ -84,8 +82,6 @@ Your frontend-facing API might expose a simpler model such as:
       "imageUrl": "...",
       "inStock": true
     }
-  ]
-}
 ```
 
 The exact implementation and API design are up to you.
